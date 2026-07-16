@@ -71,6 +71,12 @@
     allow="autoplay; camera; microphone; geolocation"
     allowfullscreen>
   </iframe>
-
+<!-- THÊM ĐOẠN MÃ NÀY VÀO ĐÂY -->
+  <script>
+    const iframe = document.querySelector('iframe');
+    iframe.onload = function() {
+      document.querySelector('.loading-overlay').style.display = 'none';
+    };
+  </script>
 </body>
 </html>
